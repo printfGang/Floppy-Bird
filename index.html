@@ -1,36 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
+  <head>
     <meta charset="utf-8">
     <title>Flappy Bird</title>
     <link rel="stylesheet" href="style.css">
     <script src="app.js" charset="utf-8"></script>
-</head>
-<body>
-<div class="border-left"></div>
-<div class="game-container">
-    <div class="border-top"></div>
-    <div class="sky">
-        <div class="bird"></div>
-    </div>
-    <div class="score">Score: <span id="score">0</span></div>
-</div>
-<div class="ground-container">
+  </head>
+  <body>
+
+  <div class="border-left"></div>
+  <div class="game-container">
+      <div class="border-top"></div>
+      <div class="sky">
+          <div class="bird"></div>
+      </div>
+  </div>
+  <div class="ground-container">
     <div class="ground-moving"></div>
-</div>
-<div class="border-right"></div>
+  </div>
+  <div class="border-right"></div>
 
-<!-- Restart button -->
-<button class="restart-button" onclick="restartGame()">Restart</button>
+  <!-- Restart button -->
+  <button class="restart-button" onclick="restartGame()">Restart</button>
 
-<!-- Game Over Modal -->
-<div class="modal" id="gameOverModal">
-    <div class="modal-content">
-        <span class="close" onclick="closeGameOverModal()">&times;</span>
-        <p>Game Over! Your score: <span id="finalScore"></span></p>
-        <p>Highest Score: <span id="highestScore"></span></p>
-    </div>
-</div>
-
-</body>
+  </body>
 </html>
